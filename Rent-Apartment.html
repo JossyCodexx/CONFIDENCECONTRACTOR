@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/Rent-Apartment.css">
+    <title>Rent Apartment</title>
+</head>
+<body>
+
+
+  <header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="./images/logo.png.png" alt="" class="logo-img">
+      <span class="highlight">CONFIDENCE<span class="highlight">-CONTRACTORS</span></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li> <a href="Buy-Apartment.html">Buy-Apartment</a></li>
+        <li><a href="Sell-Rent-Apartment.html">Sell-Rent-Apartment</a></li>
+        <li><a href="Buy-Sell-Land.html">Buy-Sell-Land</a></li>
+        <!-- <li><a href="List-Property.html" class="list-btn">List-Property</a></li>
+        <li><a href="login.html" class="login-btn">login</a></li> -->
+      </ul>
+    </nav>
+
+    
+    <div class="hamburger-icon" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    
+    <ul class="dropdown-menu" id="dropdownMenu">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li> <a href="Buy-Apartment.html">Buy-Apartment</a></li>
+        <li><a href="Sell-Rent-Apartment.html">Sell-Rent-Apartment</a></li>
+        <li><a href="Buy-Sell-Land.html">Buy-Sell-Land</a></li>
+      <!-- <li><a href="List-Property.html" class="list-btn">ListProperty</a></li>
+      <li><a href="login.html" class="login-btn">login</a></li> -->
+    </ul>
+  </div>
+</header>
+
+
+
+
+    
+
+<main>
+   <div class="div">
+    <h1 class="ren1">Browse Apartments for Rent</h1>
+    <p class="rent2">Find your perfect rental home from our latest listings.</p>
+   </div>
+    
+    <div class="apartments-container">
+      <!-- Apartment Card 1  -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider1">
+            <img src="./images/apt1img1.jpg.jpg" alt="Apartment 1 Image 1">
+            <img src="./images/apt1img2.jpg.jpg" alt="Apartment 1 Image 2">
+            <img src="./images/apt1img3.jpg.jpg" alt="Apartment 1 Image 3">
+            <img src="./images/apt1img4.jpg.jpg" alt="Apartment 1 Image 4">
+            <img src="./images/apt1img5.jpg.jpg" alt="Apartment 1 Image 5">
+            <img src="./images/apt1img6.jpg.jpg" alt="Apartment 1 Image 6">
+            <img src="./images/apt1img7.jpg.jpg" alt="Apartment 1 Image 7">
+            <img src="./images/apt1img8.jpg.jpg" alt="Apartment 1 Image 8">
+          </div>
+          <!-- <button class="prev" onclick="moveSlide(1, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1, 1)">&#10095;</button> -->
+        </div>
+        <div class="info">
+          <h2>Exquisite Fully Furnished 1 Bedroom Apartment </h2>
+          <p>Location: Hackensack, NJ</p>
+          <p>Rent: $2,950/month</p>
+          <p>Size: 600ft²</p>
+          <button onclick="window.location.href='details.html?id=hackensack'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 2 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider2">
+            <img src="./images/apt1img2.jpg.jpg" alt="Apartment 2 Image 1">
+            <img src="./images/partt2img2.jpg" alt="Apartment 2 Image 2">
+            <img src="./images/partt2img3.jpg" alt="Apartment 2 Image 3">
+            <img src="./images/partt2img4.jpg" alt="Apartment 2 Image 4">
+            <img src="./images/partt2img5.jpg" alt="Apartment 2 Image 5">
+            <img src="./images/partt2img6.jpg" alt="Apartment 2 Image 6">
+            <img src="./images/partt2img7.jpg" alt="Apartment 2 Image 7">
+            <img src="./images/partt2img8.jpg" alt="Apartment 2 Image 8">
+          </div>
+          <!-- <button class="prev" onclick="moveSlide(2, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(2, 1)">&#10095;</button> -->
+        </div>
+        <div class="info">
+          <h2>Modern 2 Bedroom Apartment</h2>
+          <p>Location: Jersey City, NJ</p>
+          <p>Rent: $3,200/month</p>
+          <p>Size: 850ft²</p>
+          <button onclick="window.location.href='details.html?id=jerseycity'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 3 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider3">
+            <img src="./images/ment33img1.jpg" alt="Apartment 3 Image 1">
+            <img src="./images/ment33img2.jpg" alt="Apartment 3 Image 2">
+            <img src="./images/ment33img3.jpg" alt="Apartment 3 Image 3">
+            <img src="./images/ment33img4.jpg" alt="Apartment 3 Image 4">
+            <img src="./images/ment33img5.jpg" alt="Apartment 3 Image 5">
+            <img src="./images/ment33img6.jpg" alt="Apartment 3 Image 6">
+            <img src="./images/ment33img7.jpg" alt="Apartment 3 Image 7">
+            <img src="./images/ment33img8.jpg" alt="Apartment 3 Image 8">
+          </div>
+          <!-- <button class="prev" onclick="moveSlide(3, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(3, 1)">&#10095;</button> -->
+        </div>
+        <div class="info">
+          <h2>Luxury Studio Apartment</h2>
+          <p>Location: Hoboken, NJ</p>
+          <p>Rent: $2,400/month</p>
+          <p>Size: 500ft²</p>
+          <button onclick="window.location.href='details.html?id=hoboken'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 4 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider4">
+            <img src="../images/apt44img11.jpg.jpg" alt="Apartment 4 Image 1">
+            <img src="../images/apt44img22.jpg.jpg" alt="Apartment 4 Image 2">
+            <img src="../images/apt44img33.jpg.jpg" alt="Apartment 4 Image 3">
+            <img src="../images/apt44img44.jpg.jpg" alt="Apartment 4 Image 4">
+            <img src="../images/apt44img55.jpg.jpg" alt="Apartment 4 Image 5">
+            <img src="../images/apt44img66.jpg.jpg" alt="Apartment 4 Image 6">
+            <img src="../images/apt44img77.jpg.jpg" alt="Apartment 4 Image 7">
+            <img src="../images/apt44img88.jpg.jpg" alt="Apartment 4 Image 8">
+          </div>
+          <!-- <button class="prev" onclick="moveSlide(4, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(4, 1)">&#10095;</button> -->
+        </div>
+        <div class="info">
+          <h2>Spacious 3 Bedroom Townhouse</h2>
+          <p>Location: Newark, NJ</p>
+          <p>Rent: $3,500/month</p>
+          <p>Size: 1200ft²</p>
+          <button onclick="window.location.href='details.html?id=newark'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 5 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider5">
+            <img src="../images/apt55img11.jpg.jpg" alt="Apartment 5 Image 1">
+            <img src="../images/apt55img22.jpg.jpg" alt="Apartment 5 Image 2">
+            <img src="../images/apt55img33.jpg.jpg" alt="Apartment 5 Image 3">
+            <img src="../images/apt55img44.jpg.jpg" alt="Apartment 5 Image 4">
+            <img src="../images/apt55img55.jpg.jpg" alt="Apartment 5 Image 5">
+            <img src="../images/apt55img66.jpg.jpg" alt="Apartment 5 Image 6">
+            <img src="../images/apt5img77.jpg.jpg" alt="Apartment 5 Image 7">
+            <img src="../images/apt55img88.jpg.jpg" alt="Apartment 5 Image 8">
+          </div>
+          <button class="prev" onclick="moveSlide(5, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(5, 1)">&#10095;</button>
+        </div>
+        <div class="info">
+          <h2>Cozy 1 Bedroom with Balcony</h2>
+          <p>Location: Montclair, NJ</p>
+          <p>Rent: $2,100/month</p>
+          <p>Size: 650ft²</p>
+          <button onclick="window.location.href='details.html?id=montclair'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 6 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider6">
+            <img src="../images/apt66img11.jpg.jpg" alt="Apartment 6 Image 1">
+            <img src="../images/apt66im22.jpg.jpg" alt="Apartment 6 Image 2">
+            <img src="../images/apt66img33.jpg.jpg" alt="Apartment 6 Image 3">
+            <img src="../images/apt66img44.jpg.jpg" alt="Apartment 6 Image 4">
+            <img src="../images/apt66img55.jpg.jpg" alt="Apartment 6 Image 5">
+            <img src="../images/apt44img66.jpg.jpg" alt="Apartment 6 Image 6">
+            <img src="../images/apt66img77.jpg.jpg" alt="Apartment 6 Image 7">
+            <img src="../images/apt66img88.jpg.jpg" alt="Apartment 6 Image 8">
+          </div>
+          <button class="prev" onclick="moveSlide(6, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(6, 1)">&#10095;</button>
+        </div>
+        <div class="info">
+          <h2>Renovated 2 Bedroom Apartment</h2>
+          <p>Location: Clifton, NJ</p>
+          <p>Rent: $2,800/month</p>
+          <p>Size: 900ft²</p>
+          <button onclick="window.location.href='details.html?id=clifton'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 7 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider7">
+            <img src="../images/apt777img111.jpg.jpg" alt="Apartment 7 Image 1">
+            <img src="../images/apt777img222.jpg.jpg" alt="Apartment 7 Image 2">
+            <img src="../images/apt777img333.jpg.jpg" alt="Apartment 7 Image 3">
+            <img src="../images/apt777img444.jpg.jpg" alt="Apartment 7 Image 4">
+            <img src="../images/apt777img555.jpg.jpg" alt="Apartment 7 Image 5">
+            <img src="../images/apt777img666.jp.jpg" alt="Apartment 7 Image 6">
+            <img src="../images/apt777img777.jpg.jpg" alt="Apartment 7 Image 7">
+            <img src="../images/apt777img888.jpg.jpg" alt="Apartment 7 Image 8">
+          </div>
+          <button class="prev" onclick="moveSlide(7, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(7, 1)">&#10095;</button>
+        </div>
+        <div class="info">
+          <h2>Luxury Loft Apartment</h2>
+          <p>Location: Morristown, NJ</p>
+          <p>Rent: $3,100/month</p>
+          <p>Size: 750ft²</p>
+          <button onclick="window.location.href='details.html?id=morristown'">View Details</button>
+        </div>
+      </div>
+      
+      <!-- Apartment Card 8 -->
+      <div class="apartment-card">
+        <div class="slider-container">
+          <div class="slider" id="slider8">
+            <img src="../images/apt888img111.jpg.jpg" alt="Apartment 8 Image 1">
+            <img src="../images/apt888img222.jpg.jpg" alt="Apartment 8 Image 2">
+            <img src="../images/apt888img333.jpg.jpg" alt="Apartment 8 Image 3">
+            <img src="../images/apt888img444.jpg.jpg" alt="Apartment 8 Image 4">
+            <img src="../images/apt888img555.jpg.jpg" alt="Apartment 8 Image 5">
+            <img src="../images/apt888img666.jpg.jpg" alt="Apartment 8 Image 6">
+            <img src="../images/apt888img777.jpg.jpg" alt="Apartment 8 Image 7">
+            <img src="../images/apt888img888.jpg.jpg" alt="Apartment 8 Image 8">
+          </div>
+          <button class="prev" onclick="moveSlide(8, -1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(8, 1)">&#10095;</button>
+        </div>
+        <div class="info">
+          <h2>Waterfront 3 Bedroom Condo</h2>
+          <p>Location: Edgewater, NJ</p>
+          <p>Rent: $4,500/month</p>
+          <p>Size: 1400ft²</p>
+          <button onclick="window.location.href='details.html?id=edgewater'">View Details</button>
+        </div>
+      </div>
+
+
+ <!-- Apartment Card 9 -->
+<div class="apartment-card">
+  <div class="slider-container">
+    <div class="slider" id="slider9">
+      <img src="../images/apt999img111.jpg.jpg" alt="Apartment 9 Image 1">
+      <img src="../images/apt999img222.jpg.jpg" alt="Apartment 9 Image 2">
+      <img src="../images/apt999img333.jpg.jpg" alt="Apartment 9 Image 3">
+      <img src="../images/apt999img444.jpg.jpg" alt="Apartment 9 Image 4">
+      <img src="../images/apt999img555.jpg.jpg" alt="Apartment 9 Image 5">
+      <img src="../images/apt999img666.jpg.jpg" alt="Apartment 9 Image 6">
+      <img src="../images/apt999img777.jpg.jpg" alt="Apartment 9 Image 7">
+      <img src="../images/apt999img888.jpg.jpg" alt="Apartment 9 Image 8">
+    </div>
+    <button class="prev" onclick="moveSlide(9, -1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(9, 1)">&#10095;</button>
+  </div>
+  <div class="info">
+    <h2>Penthouse Studio with City Views</h2>
+    <p>Location: Fort Lee, NJ</p>
+    <p>Rent: $2,800/month</p>
+    <p>Size: 580ft²</p>
+    <button onclick="window.location.href='details.html?id=fortlee'">View Details</button>
+  </div>
+</div>
+
+
+
+      <!-- Apartment Card 10 -->
+
+<div class="apartment-card">
+  <div class="slider-container">
+    <div class="slider" id="slider10">
+      <img src="../images/apt1010img111.jpg.jpg" alt="Apartment 10 Image 1">
+      <img src="../images/apt1010img222.jpg.jpg" alt="Apartment 10 Image 2">
+      <img src="../images/apt1010img333.jpg.jpg" alt="Apartment 10 Image 3">
+      <img src="../images/apt1010img444.jpg.jpg" alt="Apartment 10 Image 4">
+      <img src="../images/apt1010img555.jpg.jpg" alt="Apartment 10 Image 5">
+      <img src="../images/apt1010img666.jpg.jpg" alt="Apartment 10 Image 6">
+      <img src="../images/apt1010img777.jpg.jpg" alt="Apartment 10 Image 7">
+      <img src="../images/apt1010img888.jpg.jpg" alt="Apartment 10 Image 8">
+    </div>
+    <button class="prev" onclick="moveSlide(10, -1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(10, 1)">&#10095;</button>
+  </div>
+  <div class="info">
+    <h2>Modern 1 Bedroom with Home Office</h2>
+    <p>Location: Princeton, NJ</p>
+    <p>Rent: $2,350/month</p>
+    <p>Size: 720ft²</p>
+    <button onclick="window.location.href='details.html?id=princeton'">View Details</button>
+  </div>
+</div>
+
+</main>
+
+
+
+
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo & About -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="./images/logo1.png.png" alt="Ultimate Property Logo">
+        <h2>Ultimate<span class="highlight">Property</span></h2>
+      </a>
+      <p>Helping you find your perfect home with ease. From luxury villas to cozy apartments, we connect you to your dream property.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="rent.html">Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Property Sales</a></li>
+        <li><a href="#">Property Rentals</a></li>
+        <li><a href="#">Real Estate Consulting</a></li>
+        <li><a href="#">Property Management</a></li>
+        <li><a href="#">Mortgage Assistance</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><i class="fas fa-envelope"></i> info@ultimateproperty.com</p>
+      <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Ultimate Property. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="./Js/Rent-Apartment.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

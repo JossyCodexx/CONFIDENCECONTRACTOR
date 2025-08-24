@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    form { background: white; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    input, button { width: 100%; padding: 10px; margin: 5px 0; }
+    button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="./images/logo.png.png" alt="" class="logo-img">
+      <span class="highlight">CONFIDENCE<span class="highlight">-CONTRACTORS</span></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li> <a href="Buy-Apartment.html">Buy-Apartment</a></li>
+        <li><a href="Sell-Rent-Apartment.html">Sell-Rent-Apartment</a></li>
+        <li><a href="Buy-Sell-Land.html">Buy-Sell-Land</a></li>
+        <!-- <li><a href="List-Property.html" class="list-btn">List-Property</a></li>
+        <li><a href="login.html" class="login-btn">login</a></li> -->
+      </ul>
+    </nav>
+
+    
+    <div class="hamburger-icon" onclick="toggleDropdown()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    
+    <ul class="dropdown-menu" id="dropdownMenu">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li> <a href="Buy-Apartment.html">Buy-Apartment</a></li>
+        <li><a href="Sell-Rent-Apartment.html">Sell-Rent-Apartment</a></li>
+        <li><a href="Buy-Sell-Land.html">Buy-Sell-Land</a></li>
+      <!-- <li><a href="List-Property.html" class="list-btn">ListProperty</a></li>
+      <li><a href="login.html" class="login-btn">login</a></li> -->
+    </ul>
+  </div>
+</header>
+
+  <form id="registerForm">
+    <h2>Register</h2>
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const res = await fetch("http://localhost:5000/api/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password })
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        alert("Registration successful! Please login.");
+        window.location.href = "login.html";
+      } else {
+        alert(data.message || "Registration failed");
+      }
+    });
+  </script>
+
+
+
+<script src="./Js/register.js" defer></script>
+</body>
+</html>
