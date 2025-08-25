@@ -218,6 +218,17 @@
 }
 
 
+#contactForm input,
+#contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#contactForm button:hover {
+  background: #0056b3;
+}
 
 
 
